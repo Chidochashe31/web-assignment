@@ -1,0 +1,139 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Website header */
+header {
+    background-color: #101820;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    color: #b7f34a;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #202b36;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #b7f34a;
+    color: #101820;
+}
+
+/* Home page introduction */
+.hero {
+    background-color: #101820;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 15px auto 25px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #b7f34a;
+    color: #101820;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+/* Content sections */
+.content {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+/* Information cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 22px;
+    border-radius: 8px;
+    flex: 1 1 220px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer */
+footer {
+    background-color: #101820;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 35px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
